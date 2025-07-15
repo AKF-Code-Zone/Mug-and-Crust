@@ -22,4 +22,4 @@ A modern frontend café website built using HTML, CSS, and JavaScript. Team proj
 🎨 Branding: Mug & Crust  
 👥 Team Project  
 📅 Semester 4  
-✅ Live: [Visit Website](https://AKF-Code-Zone.github.io/mug-and-crust/)
+✅ Live: [Visit Website](https://akf-code-zone.github.io/Mug-and-Crust/)
