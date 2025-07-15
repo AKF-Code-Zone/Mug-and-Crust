@@ -6,7 +6,6 @@ A modern frontend café website built using HTML, CSS, and JavaScript. Team proj
 
 ## 🔑 Features
 
-- Responsive layout for all screens
 - Smooth scroll navigation
 - Menu with coffee, pizza, bakery, drinks
 - “Order Now” & “Contact” CTA buttons
