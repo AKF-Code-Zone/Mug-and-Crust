@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cofee website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="hotselling.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text">
+                Coffee<span class="highlight">Shop</span>
+            </h2>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav item">
+                <a href="homeindex.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav item">
+                <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav item">
+                <a href="testimonial.html" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+ <!-----------Contact Section------------->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title" style="color: #fff;">Contact Me</h2>
+      <div class="row">
+          <div class="contact-left">
+            <p><i class="fa-solid fa-location-crosshairs"></i>123 Campsite Avenue, Wilderness, CA 987623</p>
+              <p><i class="fa-solid fa-paper-plane"></i> CoffeeShop@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i> 0302-1519063</p>
+              <p> <i class="fa-regular fa-clock"></i>Monday - friday: 9:30 AM - 5:00 PM</p>
+              <p> <i class="fa-regular fa-clock"></i>Sunday: Closed</p>
+          </div>
+          <div class="contact-right">
+          <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="Email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"  required></textarea>
+              <button type="submit" class="btn btn2"><b>Submit</b></button>
+              <div id="spinner" style="display: none;">
+                <i class="fa fa-spinner fa-spin"></i> Sending...
+              </div>              
+          </form>
+          <span id="msg"></span>
+      </div>
+  </div>
+</div>
+</section>
+
+
+  <!-----------Footer Section------------->
+    <footer class="footer-section">
+      <div class="section-content">
+        <p class="copyright-text">© 2025 CoffeeShop | Designed with ☕ and ❤</p>
+        <div class="social-link-list">
+          <a href="https://facebook.com/" class="social-link"><i class="fa-brands fa-facebook"></i></a> 
+                  <a href="https://twitter.com" class="social-link"><i class="fa-brands fa-square-twitter"></i></a> 
+                  <a href="https://instagram.com/" class="social-link"><i class="fa-brands fa-instagram"></i></a> 
+                  <a href="https://linkedin.com/" class="social-link"><i class="fa-brands fa-linkedin"></i></a> 
+        </div>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator">.</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+        </div>
+      </footer>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfSf1MqIV5ZPrP4HxwOqt0IvpOLRfoJCviicP8xy3zKzke40wq7dUW_zGPlB0yyVwRMg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          spinner.style.display = "inline-block"  // Show spinner
+          msg.innerHTML = ""          
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML ="Message sent successfully"
+              setTimeout(function(){
+                 msg.innerHTML = ""
+              },5000)
+              form.reset()
+              spinner.style.display = "none" 
+            })
+            .catch(error => {
+         msg.innerHTML = "Something went wrong. Please try again!"
+         console.error('Error!', error.message)
+         spinner.style.display = "none"
+        }) 
+          })
+      </script>
+    </body>
+    </html>

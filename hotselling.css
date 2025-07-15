@@ -1,0 +1,218 @@
+.testimonials-section {
+    padding: 50px 0 100px;
+    background: #c03939;
+}
+.testimonials-section h2{
+    color: #fff;
+}
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+    
+}
+
+.testimonials-section .testimonials-list {
+    display: flex;
+    gap: 16px; /* Slightly smaller gap to accommodate larger cards */
+   
+}
+
+.testimonials-section .hotselling {
+    overflow: hidden;
+    border-radius: 8px;
+    flex: 0 0 calc(33.33% - 16px); 
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #3b141c;
+    padding: 16px;
+}
+
+.testimonials-section .hotselling .hotselling-image {
+    width: 100%;
+    height: 320px; /* Increased height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: zoom-in;
+}
+
+.testimonials-section .hotselling:hover .hotselling-image {
+    transform: scale(1.05);
+}
+
+.testimonials-section .name {
+    margin-top: 12px;
+    font-size: 20px; 
+    font-weight: 700; 
+    color: #fff; 
+}
+
+
+.testimonials-section .swiper-slide-button {
+    margin-top: -50px;
+    color: #f3961c;
+    transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+    color:#fff;
+}
+
+/* main menu */
+
+.mainmenu-section {
+    padding: 50px 0 100px;
+    background: #fff;
+}
+.mainmenu-section h2{
+    color: black;
+}
+.mainmenu-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.mainmenu-section .mainmenu-list {
+    display: flex;
+    gap: 12px; /* Slightly smaller gap to accommodate larger cards */
+   
+}
+
+.mainmenu-section .mainmenu{
+    overflow: hidden;
+    border-radius: 8px;
+    flex: 0 0 calc(33.33% - 16px); 
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.mainmenu-section .mainmenu .mainmenu-image {
+    width: 100%;
+    height: 320px; /* Increased height */
+    object-fit: cover;
+    border-radius: 8px;
+   
+}
+
+
+.mainmenu-section .name {
+    margin-top: 12px;
+    font-size: 20px; 
+    font-weight: 700; 
+    color: black; 
+}
+
+
+.mainmenu-section .swiper-slide-button {
+    margin-top: -50px;
+    color: #f3961c;
+    transition: 0.3s ease;
+}
+
+.mainmenu-section .swiper-slide-button:hover {
+    color: #3b141c;
+}
+.goal{
+    height:100%;
+    width:50px;
+}
+
+/*-------goal--------*/
+.goal {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.goal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.goal .buttons {
+    position: absolute;
+    top: 70%; /* Increased from 50% to push button lower */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.goal .button.learn-more {
+    background-color: #f3961c;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.goal .button.learn-more:hover {
+    background-color: #3b141c;
+    color: #fff;
+}
+
+.goal-section {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+/*----------goals section--*/
+.goal-wrapper {
+    padding: 40px 5%; /* Space between images and page edges */
+    background-color: #f9f9f9; /* Optional light background */
+}
+
+.goal-section2 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.goal-section2 img {
+    width: 100%;
+    height: 600px; /* Adjusted to a smaller but visible size */
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+.goal-image-container {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.goal-image {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+  
+}
+
+.goal-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}

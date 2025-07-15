@@ -1,0 +1,311 @@
+/*importing google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+/*Colors*/
+--white-color:#fff;
+--dark-color:#252525;
+--primary-color:#3b141c;
+--secondary-color:#f3961c;
+--light-pink-color:#faf4f5;
+--medium-gray-color:#ccc;
+
+/*Font size*/
+--font-size-s:0.8rem;
+--font-size-n:1rem;
+--font-size-m:1.12rem;
+--font-size-1:1.5rem;
+--font-size-xl:2rem;
+--font-size-xxl:2.3rem;
+
+/*Font weight*/
+--font-weight-normal:400;
+--font-weight-medium:500;
+--font-weight-semibold:600;
+--font-weight-bold:700;
+
+/*Border radius*/
+--border-radius-s:8px;
+--border-radius-m:30px;
+--border-radius-circle:50%;
+/*Site max width*/
+--site-max-width:1300px;
+}
+/*Styling for whole website*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+button{
+    cursor:pointer;
+    background: none;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+img{
+    width: 100%;
+}
+
+             /*logo styling*/
+.logo-text{
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    cursor: pointer;
+    transition:text-shadow 0.3s ease;
+    }
+.logo-text .highlight{
+    color: var(--secondary-color);
+}
+
+.section-content{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
+}
+.section-title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px 0 100px;
+    font-size: var(--font-size-xl);
+}
+.section-title::after{
+    content:"";
+    width:80px;
+    height:5px;
+    display:block;
+    margin:10px auto 0;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-color);
+}
+         /*styling for navbar*/
+header{
+    background:var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar .nav-logo .logo-text{
+    color:var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+header .navbar{
+    display:flex;
+    padding: 20px;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar .nav-menu{
+    display: flex;
+    gap:10px;
+}
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+     color: white;
+     border-radius: var(--border-radius-m);
+     transition:0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover{
+color: var(--primary-color);
+background-color:var(--secondary-color) ;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+.hero-section .hero-details .subtitle{
+    margin-top:8px;
+    max-width:70%;
+    font-size:var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+.hero-section .hero-details .description{
+    max-width: 70%;
+    margin: 24px 0px 48px;
+    font-size: var(--font-size-m);
+}
+.hero-image{
+    transition:transform 0.4s ease;
+    height: auto;
+     max-width:400px;
+}
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+.hero-image:hover{
+    transform: scale(1.05);
+}
+.hero-section .hero-details .button{
+    padding:10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover{
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+                 /*About*/
+.about-section{
+    padding:120px 0;
+    background:var(--light-pink-color);
+}
+
+.about-section .section-content{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-details .section-title{
+    padding: 0;
+}
+.about-section .about-image-wrapper .about-image{
+    width:400px;
+    height:400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+.about-section .about-details{
+    max-width: 50%;
+}
+
+.about-section .about-details .text{
+    line-height:30px;
+    margin:50px 0 30px;
+    text-align:center;
+    font-size: var(--border-radius-m);
+}
+
+.about-section .social-link-list{
+    display:flex;
+    gap:25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link{
+    color:var(--primary-color);
+    font-size: var(--font-size-1);
+    transition:0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover{
+    color:var(--secondary-color);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3c0d16;
+  color: white;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-section h2,
+.menu-section h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+/* Menu Items Grid */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 30px;
+  margin-top: 30px;
+}
+
+/* Individual Card */
+.card {
+  background-color: #4d1622;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;              /* Let height adjust naturally */
+  max-height: 200px;         /* Optional: Set a max height */
+  object-fit: contain;       /* Show the full image without cropping */
+  border-radius: 8px;
+}
+
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #f7a11b;
+}
+
+
+.card p {
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.card span {
+  display: block;
+  margin-top: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  background-color: #2a0912;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}

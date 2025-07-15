@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <!--Linking Swiper Css For Swiping Functionality-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="contact.css">
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">
+                    Coffee<span class="highlight">Shop</span>
+                </h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav item">
+                    <a href="homeindex.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav item">
+                    <a href="#" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!---Testimonial Section-->
+    <section class="testimonials-section">
+    <h2 class="section-title"> Testimonials</h2>
+   <div class="section-content">
+        <div class="slider-container swiper">
+            <div class="slider-wrapper">
+            
+                <ul class="testimonials-list swiper-wrapper">
+                    <li class="testimonial swiper-slide">
+                        <img src="user-1.jpg" alt="User" class="user-image">
+                        <h3 class="name">Sarah Afzal</h3>
+                        <i class="feedback">"Loved the French roast. Perdfectly balanced and rich. Will Order it again!"</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="user-2.jpg" alt="User" class="user-image">
+                        <h3 class="name">Javeria Tariq</h3>
+                        <i class="feedback">"Great espresso Blend! Smooth and Bold. Fast shippping too."</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="user-3.jpg" alt="User" class="user-image">
+                        <h3 class="name">Tahir Nazir</h3>
+                        <i class="feedback">"Fantastic Mocha . Fresh and Signature flavour."</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="user-4.jpg" alt="User" class="user-image">
+                        <h3 class="name">Bilal Asad</h3>
+                        <i class="feedback">"Excellent quality French beans and quick delivery. Highly recommended."</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="user-5.jpg" alt="User" class="user-image">
+                        <h3 class="name">Arsalan Khan</h3>
+                        <i class="feedback">"Best Descaf I've ever tried! smooth and flavorful."</i>
+                    </li>
+                </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+             </div>
+          </div>
+       </div>
+     </section>
+    </main>
+
+   7 <!--Adding JS for Swiping Functionality for testimonials-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Linking custom script-->
+    <script src="script.js"></script>
+    <!-----------Footer Section------------->
+    <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2025 CoffeeShop | Designed with ☕ and ❤</p>
+          <div class="social-link-list">
+            <a href="https://facebook.com/" class="social-link"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://twitter.com" class="social-link"><i class="fa-brands fa-square-twitter"></i></a> 
+                    <a href="https://instagram.com/" class="social-link"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="https://linkedin.com/" class="social-link"><i class="fa-brands fa-linkedin"></i></a> 
+          </div>
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">.</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+          </div>
+        </footer>
+    </body>
+    </html>
