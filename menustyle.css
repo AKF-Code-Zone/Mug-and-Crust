@@ -309,3 +309,147 @@ footer p {
   font-size: 14px;
   color: #fff;
 }
+
+/* Responsive Design */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .navbar .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .navbar .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-section .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section .hero-details .title,
+    .hero-section .hero-details .subtitle,
+    .hero-section .hero-details .description {
+        max-width: 100%;
+    }
+
+    .hero-section .hero-image-wrapper {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .hero-image {
+        max-width: 300px;
+    }
+
+    .about-section .section-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-section .about-details {
+        max-width: 100%;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .menu-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-m);
+        padding: 40px 0 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo-text {
+        font-size: var(--font-size-m);
+    }
+
+    .hero-section .hero-details .title {
+        font-size: var(--font-size-xl);
+    }
+
+    .hero-section .hero-details .subtitle {
+        font-size: var(--font-size-m);
+    }
+
+    .hero-section .hero-details .description {
+        font-size: var(--font-size-s);
+    }
+
+    .hero-image {
+        max-width: 250px;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: var(--font-size-s);
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .section-content {
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-s);
+        padding: 30px 0 40px;
+    }
+
+    .section-title::after {
+        width: 60px;
+    }
+}

@@ -10,6 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 400); // reset after 0.4s
     });
   }
+
+  // Hamburger menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+  }
 });
 
 // custom script

@@ -216,3 +216,93 @@
     margin-bottom: 20px;
     color: #333;
 }
+
+/* Responsive Design */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .testimonials-section .slider-wrapper,
+    .mainmenu-section .slider-wrapper {
+        margin: 0 20px 50px;
+    }
+
+    .testimonials-section .hotselling,
+    .mainmenu-section .mainmenu {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .goal .buttons {
+        top: 80%;
+    }
+
+    .goal .button.learn-more {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .goal-section2 img {
+        height: 400px;
+    }
+
+    .overlay-text {
+        font-size: 36px;
+        padding: 10px 20px;
+    }
+
+    .goal-image {
+        height: 400px;
+    }
+
+    .goal-heading {
+        font-size: 28px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .testimonials-section .slider-wrapper,
+    .mainmenu-section .slider-wrapper {
+        margin: 0 10px 50px;
+    }
+
+    .testimonials-section .hotselling,
+    .mainmenu-section .mainmenu {
+        flex: 0 0 100%;
+    }
+
+    .testimonials-section .hotselling-image,
+    .mainmenu-section .mainmenu-image {
+        height: 250px;
+    }
+
+    .testimonials-section .name,
+    .mainmenu-section .name {
+        font-size: 18px;
+    }
+
+    .goal .buttons {
+        top: 85%;
+    }
+
+    .goal .button.learn-more {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .goal-section2 img {
+        height: 300px;
+    }
+
+    .overlay-text {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    .goal-image {
+        height: 300px;
+    }
+
+    .goal-heading {
+        font-size: 24px;
+    }
+}
